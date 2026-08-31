@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  IBM BAW 24.X — Gen AI Configuration (100Custom.xml)
+  Replace placeholders with your watsonx.ai credentials.
+-->
+<properties>
+  <server merge="mergeChildren">
+    <gen-ai merge="mergeChildren">
+      <provider-url>https://us-south.ml.cloud.ibm.com</provider-url>
+      <project-id>YOUR_PROJECT_ID_HERE</project-id>
+      <credential-alias>watsonxAICredAlias</credential-alias>
+      <default-foundation-model>ibm/granite-13b-instruct-v2</default-foundation-model>
+      <default-foundation-model-type>watsonx</default-foundation-model-type>
+      <supported-foundation-model-type>watsonx</supported-foundation-model-type>
+      <!-- <supported-foundation-model-type>custom</supported-foundation-model-type> -->
+    </gen-ai>
+  </server>
+</properties>
